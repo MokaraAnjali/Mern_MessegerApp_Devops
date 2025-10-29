@@ -14,6 +14,10 @@ import multer from "multer";
 const authRoutes = Router();
 const upload = multer({ dest: "uploads/profiles/" });
 
+authRoutes.get("/", (req, res) => {
+  res.send("Auth routes are working!");
+});
+
 authRoutes.post("/signup", signup);
 authRoutes.post("/login", login);
 authRoutes.post("/logout", logout);
