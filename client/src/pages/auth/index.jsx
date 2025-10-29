@@ -18,7 +18,7 @@ const Auth = () => {
   const [confirmPassword, setConfirmPassword] = useState("");
   const validateLogin = () => {
     if (!email.length) {
-      toast.error("Email is required.");
+      toast.error("Email is required so much .");
       return false;
     }
     if (!password.length) {
